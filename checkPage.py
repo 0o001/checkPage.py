@@ -14,7 +14,7 @@ __author__ = 'mustafauzun0'
 '''
 
 def main():
-    parser = argparse.ArgumentParser(description='')
+    parser = argparse.ArgumentParser(description='Website Page Checker')
     
     parser.add_argument('-u', '--url', dest='url', type=str, help='Website URL', required=True)
     parser.add_argument('-p', '--page', dest='page', type=str, default='', help='Website Page')
