@@ -21,10 +21,10 @@ def main():
 
     args = parser.parse_args()
 
-    if args.url != None:
+    if args.url:
         args.url = args.url.strip().strip('/')
 
-    if args.page != None:
+    if args.page:
         args.page = args.page.strip().strip('/')
 
     request = requests.get(args.url + '/' + args.page, allow_redirects=False)
